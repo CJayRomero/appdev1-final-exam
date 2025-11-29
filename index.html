@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo — Demo</title>
+
+  <!-- Google font used by your CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+  <!-- If you don't have a kit, use CDN fallback -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+
+  <link rel="stylesheet" crossorigin href="/assets/index-CYu8Du9E.css">
+</head>
+<body>
+
+  <!-- header / title -->
+  <header id="header">
+    <div class="flexrow-container">
+      <div class="theme-selector standard-theme" title="Standard" id="standardTheme"></div>
+      <div class="theme-selector light-theme" title="Light" id="lightTheme"></div>
+      <div class="theme-selector darker-theme" title="Darker" id="darkerTheme"></div>
+    </div>
+
+    <div id="title">Just do it.</div>
+  </header>
+
+  <!-- form -->
+  <section id="form">
+    <form>
+      <input type="text" placeholder="Add a new task..." class="todo-input" />
+      <button class="todo-btn standard-button" type="button">Add</button>
+    </form>
+  </section>
+
+  <!-- datetime -->
+  <section id="datetime"></section>
+
+  <!-- list -->
+  <section id="myUnOrdList">
+    <ul class="todo-list" id="todoListContainer"></ul>
+  </section>
+
+  <!-- Optional GitHub corner (requires corner.css) -->
+  <!-- paste your SVG corner here if you have one -->
+
+  <script src="time.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
