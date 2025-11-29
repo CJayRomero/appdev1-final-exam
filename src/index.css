@@ -1,0 +1,71 @@
+:root {
+  --bg-gradient: linear-gradient(90deg, #344950, #0b3b44);
+  --text-color: #f5d6d6;
+  --accent: #f0c9c9;
+  --input-bg: rgba(0,0,0,0.3);
+}
+
+/* Light theme */
+:root.theme-light {
+  --bg-gradient: linear-gradient(90deg,#eaf8ff,#ffffff);
+  --text-color:#0f1415;
+  --accent: #e0e0e0;
+  --input-bg: rgba(255,255,255,0.8);
+}
+
+/* Dark theme */
+:root.theme-dark {
+  --bg-gradient: linear-gradient(90deg,#071b21,#031318);
+  --text-color:#eaf6f7;
+  --accent: #08333a;
+  --input-bg: rgba(0,0,0,0.35);
+}
+
+/* UI layout */
+body, html, #root {
+  height: 100%;
+}
+body {
+  margin:0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-gradient);
+  transition: background 300ms ease, color 300ms ease;
+}
+
+/* big hero */
+.hero .title {
+  font-size: clamp(48px, 8vw, 96px);
+  letter-spacing: 1px;
+  margin: 32px 0;
+}
+
+/* input styles to mimic screenshot pill input */
+.add-form input {
+  background: var(--input-bg);
+  color: var(--text-color);
+  border-radius: 999px;
+  padding: 14px 20px;
+  border: none;
+  width: 50%;
+  outline: none;
+}
+
+.add-form button {
+  margin-left: 12px;
+  background: var(--accent);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: none;
+}
+
+/* rounded todo item pill */
+.todo-item {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.25);
+}
