@@ -1,3 +1,5 @@
+import React from "react";
+import TodoApp from "../components/TodoApp";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadTodos } from "../features/todos/todosSlice";
@@ -25,4 +27,9 @@ export default function Todos() {
       </main>
     </div>
   );
+}
+
+
+export default function TodosPage() {
+  return <TodoApp />;
 }
